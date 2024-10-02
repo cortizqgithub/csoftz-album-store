@@ -1,0 +1,50 @@
+= csoftz-album-store
+
+V2024.1.0
+
+== PostgreSQL
+
+lkdfjalkdjfalkj
+lkajflakj
+lkajdflkj
+
+[source,bash]
+----
+$ docker run --name local-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres:17.0 <1>
+----
+<1> If you run this command, the container does not expose the port to outside world.
+
+[source,bash]
+----
+$ docker run -d \
+--name local-postgres \
+-e POSTGRES_USER=user \
+-e POSTGRES_PASSWORD=password \
+-e POSTGRES_DB=album-store \
+-p 5432:5432 \
+postgres:17.0  <1>
+----
+<1> The docker image is in https://hub.docker.com/_/postgres[Docker Hub PostgresSQL page^]
+
+
+URL	jdbc:postgresql://localhost:5432/album-store
+
+== References
+
+=== Tutorials
+* https://www.simplilearn.com/tutorials/java-tutorial[Java Tutorial for Beginners^]
+* https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[Gitflow workflow^]
+* https://www.baeldung.com/java-record-keyword[Java Record Keyword^]
+* https://www.techtarget.com/searchdatamanagement/tip/7-data-modeling-techniques-and-concepts-for-business[7 data modeling techniques and concepts for business]
+* https://www.geeksforgeeks.org/data-structures/[Data Structures Tutorial^]
+* https://www.knowledgefactory.net/2023/10/spring-boot-3-spring-security-6-thymeleaf-registration-and-login-example.html[Spring Boot 3/Spring Security 6/Thymeleaf registration and login example^]
+
+=== Docker
+* https://podman.io/[Podman Desktop^]
+* https://rancherdesktop.io/[Rancher Desktop^]
+* https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/[How to Use the Postgres Docker Official Image^]
+
+=== Database
+* https://dbeaver.io/[Beaver Community - Free Universal Database Tool^]
+* https://hub.docker.com/_/postgres[Docker Hub PostgresSQL page^]
+* https://www.cdata.com/kb/tech/postgresql-jdbc-dbvr.rst[]
