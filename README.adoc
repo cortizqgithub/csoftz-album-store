@@ -29,6 +29,24 @@ postgres:17.0  <1>
 
 URL	jdbc:postgresql://localhost:5432/album-store
 
+
+To run Unit Tests Only
+
+[source,bash]
+----
+$ mvn clean package -Pcoverage
+----
+
+To run Integration Tests Only
+[source,bash]
+----
+$ mvn clean verify -Pintegration-test
+----
+
+
+
+
+
 == References
 
 === Tutorials
